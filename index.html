@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="./img/icon.png"> -->
+    <!-- <link rel="apple-touch-icon" href="./img/icon.png"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="style.css">
+<title>📗Ĉina - Esperanto Vortaro</title>
+</head>
+<body>
+<div class="sticky">
+  <h2>📗Ĉina - Esperanto Vortaro</h2>
+  <small>Ĉina  - Esperanto vortaro kun 54579 vortoj, bazita sur datumoj de lernu.net</small>
+<input type="text" id="searchInput" placeholder="serĉi" oninput="liveSearch(this.value)" onfocus="liveSearch(this.value)">
+<button onclick="search()">serĉi</button>
+<div id="liveSearch"></div>
+<div id="countWordResult"></div>
+</div> 
+
+<div id="searchResult"></div>
+
+<div id="e"></div>
+
+<script src="vortaro.js" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+</body>
+</html>
